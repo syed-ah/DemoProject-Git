@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.photon.phresco.service</groupId>
 	<artifactId>DemoProject-Git</artifactId>
-	<version>1.2.1</version>
+	<version>1.2.1-SNAPSHOT</version>
     <scm>
         <connection>https://github.com/syed-ah/DemoProject-Git.git</connection>
         <developerConnection>scm:git:https://github.com/syed-ah/DemoProject-Git.git</developerConnection>
