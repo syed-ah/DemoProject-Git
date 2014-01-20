@@ -7,7 +7,8 @@
         <connection>https://github.com/syed-ah/DemoProject-Git.git</connection>
         <developerConnection>scm:git:https://github.com/syed-ah/DemoProject-Git.git</developerConnection>
         <url>scm:git:https://github.com/syed-ah/DemoProject-Git.git</url>
-    </scm>
+      <tag>demobranch</tag>
+  </scm>
 	<packaging>phresco</packaging>
 	<name>DemoProject-Git</name>
 
