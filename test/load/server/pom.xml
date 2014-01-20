@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>com.photon.phresco.load</groupId>
-    <artifactId>d7noneas-drupal7</artifactId>
-    <packaging>pom</packaging>
-    <name>LoadTest-Server</name>
-    <version>dfd</version>
-    <build>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.photon.phresco.load</groupId>
+  <artifactId>d7noneas-drupal7</artifactId>
+  <version>dfd</version>
+  <packaging>pom</packaging>
+  <name>LoadTest-Server</name>
+  <build>
     <plugins>
       <plugin>
         <groupId>com.google.code.sortpom</groupId>
@@ -42,31 +42,29 @@
           </dependency>
         </dependencies>
         <configuration>
-          <!-- <ignoreResultFailures>true</ignoreResultFailures> -->
           <testResultsTimestamp>false</testResultsTimestamp>
+          <!-- <ignoreResultFailures>true</ignoreResultFailures> -->
           <testFilesDirectory>tests/</testFilesDirectory>
+          <resultFilesDirectory>results/jmeter/</resultFilesDirectory>
+          <pluginTypes>
+            <types>ThreadsStateOverTime</types>
+            <types>BytesThroughputOverTime</types>
+            <types>HitsPerSecond</types>
+            <types>LatenciesOverTime</types>
+            <types>ResponseCodesPerSecond</types>
+            <types>ResponseTimesDistribution</types>
+            <types>ResponseTimesOverTime</types>
+            <types>ResponseTimesPercentiles</types>
+            <types>ThroughputVsThreads</types>
+            <types>TimesVsThreads</types>
+            <types>TransactionsPerSecond</types>
+          </pluginTypes>
+          <resultFilesName>
+            <resultName>JavaWS</resultName>
+          </resultFilesName>
           <testFilesIncluded>
             <jMeterTestFile>PhrescoFrameWork_TestPlan.jmx</jMeterTestFile>
           </testFilesIncluded>
-          <resultFilesDirectory>results/jmeter/</resultFilesDirectory>
-          <resultFilesName>
-            <resultName>SaaS-2kTerms</resultName>
-          </resultFilesName>	
-		  
-        <pluginTypes>
-           <types>ThreadsStateOverTime</types>
-           <types>BytesThroughputOverTime</types>
-           <types>HitsPerSecond</types>
-           <types>LatenciesOverTime</types>
-           <types>ResponseCodesPerSecond</types>
-           <types>ResponseTimesDistribution</types>
-           <types>ResponseTimesOverTime</types>
-           <types>ResponseTimesPercentiles</types>
-           <types>ThroughputVsThreads</types>
-           <types>TimesVsThreads</types>
-           <types>TransactionsPerSecond</types>
-        </pluginTypes>
-		  
         </configuration>
       </plugin>
     </plugins>
